@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'linux'}
+  agent {
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
@@ -16,6 +16,7 @@ pipeline {
           allowEmptyResults: true, 
           testResults: '**/build/test-results/test/*.xml'
         )
-    }
+     }
+    )
   }
 }
