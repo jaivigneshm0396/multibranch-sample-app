@@ -1,0 +1,15 @@
+trigger:
+  branches:
+    include:
+      - main # the branch you want to trigger the pipeline for
+
+resources:
+  pipelines:
+  - pipeline: my_pipeline
+    source: <name of the pipeline in Azure DevOps>
+
+pool:
+  vmImage: 'Windows-latest'
+
+steps:
+- script: echo Hello World!
