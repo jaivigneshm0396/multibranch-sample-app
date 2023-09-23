@@ -1,1 +1,1 @@
-# multibranch-sample-app
+# multibranch-sample-apps
